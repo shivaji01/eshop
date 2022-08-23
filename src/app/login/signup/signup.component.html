@@ -1,0 +1,72 @@
+<div class="jumbotron">
+<div class="card">
+<form [formGroup]="signUpForm" (ngSubmit)="OnSubmitform()">
+    <div class="mb-3">
+        <label for="firstName" class="form-label">FirstName</label>
+        <input type="text" class="form-control" id="firstName" aria-describedby="firstName" formControlName="firstName">
+       
+      </div>
+      <div class="mb-3">
+        <label for="LastName" class="form-label">LastName</label>
+        <input type="text" class="form-control" id="LastName" formControlName="firstName" formControlName="LastName">
+      </div>
+      <div class="mb-3">
+        <label for="MobileNumber" class="form-label">Mobile Number</label>
+        <input type="text" class="form-control" id="MobileNumber" aria-describedby="MobileNumber" formControlName="MobileNumber">
+        
+      </div>
+      <div class="mb-3">
+        <label for="DateOfBirth" class="form-label">Date Of Birth</label>
+        <input type="date" class="form-control" id="DateOfBirth" formControlName="DateOfBirth">
+      </div>
+      <div class="mb-3">
+        <label for="emailId" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="emailId" aria-describedby="emailId" formControlName="emailId">
+
+      </div>
+      <div class="mb-3">
+        <label for="password" class="form-label">Password</label>
+        <input type="password" class="form-control" id="password" formControlName="password">
+      </div>
+      <div class="mb-3">
+        <label for="ConfirmPassword" class="form-label">Confirm Password</label>
+        <input type="password" class="form-control" id="ConfirmPassword" aria-describedby="ConfirmPassword" formControlName="ConfirmPassword">
+      
+      </div>
+
+<p>Address Section</p>
+<div formGroupName="address">
+      <div class="mb-3">
+
+        <label for="line1" class="form-label">line1</label>
+        <input type="text" class="form-control" id="line1" formControlName="line1">
+      </div>
+      <div class="mb-3">
+        <label for="line2" class="form-label">line2</label>
+        <input type="text" class="form-control" id="line2" aria-describedby="line2" formControlName="line2">
+  
+      </div>
+      <div class="mb-3">
+        <label for="city" class="form-label">city</label>
+        <input type="text" class="form-control" id="city" formControlName="city">
+      </div>
+      <div class="mb-3">
+        <label for="state" class="form-label">state</label>
+        <select class="form-control" id="state" aria-describedby="state" formControlName="state">
+            <option>Choose here</option>
+            <option>...</option>
+            </select>
+      </div>
+      <div class="mb-3">
+        <label for="pincode" class="form-label">pincode</label>
+        <input type="text" class="form-control" id="pincode" formControlName="pincode">
+      </div>
+    </div>
+      <div class="mb-3 form-check">
+        <input type="checkbox" class="form-check-input" id="isFormaccept" formControlName="isFormaccept">
+        <label class="form-check-label" for="isFormaccept"> I Accept Terms And Conditions.</label>
+      </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
+</div>
